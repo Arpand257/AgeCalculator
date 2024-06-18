@@ -7,7 +7,7 @@ struct day {
 };
 /*For calculation*/
 void calculation(struct day C_date, struct day B_date) {
-    int year = C_date.year - B_date.year - 1;
+    int year = C_date.year - B_date.year;
     int month;
     if (B_date.month>C_date.month) {
         month = (11 - B_date.month) + C_date.month;
